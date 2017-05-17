@@ -1,0 +1,29 @@
+The VST SDK from Steinberg comes with a license that does not
+permit source redistribution.  Therefore, in order to compile
+this program, you will need to download the VST SDK first.
+
+Instructions for compiling on Mac OS X and Linux:
+
+1. Download Steinberg's VST SDK, untar it, and change the
+   VSTINC var in the Makefile to point to the VST SDK directory
+   that contains the aeffect.h include file.
+
+2. Type "make"
+
+3. Copy the plugin, "vst-bridge.so", to the location where LADSPA
+   plugins are found.
+
+Instructions for compiling of Windows using Microsoft Visual
+Studio 2005:
+
+1. Download and unzip Steinberg's VST SDK
+
+2. Define an environment variable called VSTINC that points to the
+   VST SDK directory that contains the aeffect.h include file.
+
+3. Open "vst-bridge.sln""
+
+4. Select "Build".
+
+5. Copy the plugin, "vst-bridge.dll", to the location where LADSPA
+   plugins are found.
